@@ -1,80 +1,105 @@
 <style>
-    .intro-section{
+    .intro-section {
         text-align: center;
         color: aliceblue;
         padding: 20px;
     }
-    .search-box{
+
+    .search-box {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
     }
-    .product-category{
+
+    .product-category {
         width: 200px;
     }
-    .search-input{
+
+    .search-input {
         width: 300px;
         background-color: rgb(19, 23, 42);
         margin-right: 10px;
         border-color: rgba(255, 255, 255, 0.5);
         color: white;
     }
-    .form-control{
+
+    .form-control {
         background-color: transparent;
         color: white;
     }
-    .form-control::placeholder{ /*Chrome, firefox,...*/
+
+    .form-control::placeholder {
+        /*Chrome, firefox,...*/
         color: rgba(255, 255, 255, 0.5);
         opacity: 1;
     }
-    .form-control:-ms-input-placeholder{ /* internet explore */
+
+    .form-control:-ms-input-placeholder {
+        /* internet explore */
         color: rgba(255, 255, 255, 0.5);
     }
-    .form-control::-ms-input-placeholder{  /* microsoft edge */
+
+    .form-control::-ms-input-placeholder {
+        /* microsoft edge */
         color: rgba(255, 255, 255, 0.5);
     }
-    .product-item{
+
+    .product-item {
         background-color: rgb(19, 23, 42);
         border: 1px solid rgb(35, 39, 61);
         border-radius: 20px;
         padding: 20px;
         margin-bottom: 20px;
     }
-    .product-image{
+
+    .product-image {
         width: 100%;
         height: auto;
         margin-bottom: 10px;
     }
-    .product-name{
+
+    .product-name {
         color: white;
     }
-    .product-description{
+
+    .product-description {
         color: rgb(173, 178, 203);
     }
-    .product-warranty{
+
+    .product-warranty {
         color: rgb(242, 126, 212);
     }
-    .product-price{
+
+    .product-price {
         color: white;
     }
-    .product-rating{
+
+    .product-rating {
         margin-top: 10px;
         color: yellow;
     }
-    .product-action{
+
+    .product-action {
         display: flex;
         justify-content: center;
         margin-top: 20px;
     }
-    .space-x{
+
+    .space-x {
         margin: 0 10px;
     }
 </style>
+
+
+<app-header></app-header>
+
 <div class="container">
     <div class="intro-section">
         <h1>Đây là trang home</h1>
-        <p>Trang Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla enim dignissimos veniam quas earum rem dolor asperiores doloremque consequuntur officia itaque ipsa hic, laudantium amet minima voluptas totam illo.</p>
+        <p>Trang Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla enim dignissimos veniam quas
+            earum rem dolor asperiores doloremque consequuntur officia itaque ipsa hic, laudantium amet minima voluptas
+            totam illo.</p>
         <p>Bạn có thể vào đây mua hàng</p>
     </div>
 
@@ -91,11 +116,12 @@
     <div class="row">
         <div class="col-lg-4 col-md-6">
             <div class="product-item">
-                <img 
-                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
-                    alt="PRoduct Image"  class="product-image">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
+                    alt="PRoduct Image" class="product-image">
                 <h3 class="product-name">Product 1</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint minus assumenda? A similique eius fugiat.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus
+                    perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint
+                    minus assumenda? A similique eius fugiat.</p>
                 <p class="product-warranty">Bảo hành 60 tháng.</p>
                 <p class="product-price">Giá: <del>300$</del> 200$</p>
                 <div class="product-rating">
@@ -106,7 +132,7 @@
                     <i class="fa-solid fa-star-half-alt"></i>
                 </div>
                 <div class="product-action">
-                
+
                     <button class="btn btn-primary">Thêm vào giỏ hàng</button>
                     <span class="space-x"></span>
                     <button class="btn btn-success">Mua ngay</button>
@@ -116,11 +142,12 @@
 
         <div class="col-lg-4 col-md-6">
             <div class="product-item">
-                <img 
-                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
-                    alt="PRoduct Image"  class="product-image">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
+                    alt="PRoduct Image" class="product-image">
                 <h3 class="product-name">Product 1</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint minus assumenda? A similique eius fugiat.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus
+                    perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint
+                    minus assumenda? A similique eius fugiat.</p>
                 <p class="product-warranty">Bảo hành 60 tháng.</p>
                 <p class="product-price">Giá: <del>300$</del> 200$</p>
                 <div class="product-rating">
@@ -131,7 +158,7 @@
                     <i class="fa-solid fa-star-half-alt"></i>
                 </div>
                 <div class="product-action">
-                
+
                     <button class="btn btn-primary">Thêm vào giỏ hàng</button>
                     <span class="space-x"></span>
                     <button class="btn btn-success">Mua ngay</button>
@@ -141,11 +168,12 @@
 
         <div class="col-lg-4 col-md-6">
             <div class="product-item">
-                <img 
-                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
-                    alt="PRoduct Image"  class="product-image">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
+                    alt="PRoduct Image" class="product-image">
                 <h3 class="product-name">Product 1</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint minus assumenda? A similique eius fugiat.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus
+                    perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint
+                    minus assumenda? A similique eius fugiat.</p>
                 <p class="product-warranty">Bảo hành 60 tháng.</p>
                 <p class="product-price">Giá: <del>300$</del> 200$</p>
                 <div class="product-rating">
@@ -156,7 +184,7 @@
                     <i class="fa-solid fa-star-half-alt"></i>
                 </div>
                 <div class="product-action">
-                
+
                     <button class="btn btn-primary">Thêm vào giỏ hàng</button>
                     <span class="space-x"></span>
                     <button class="btn btn-success">Mua ngay</button>
@@ -166,11 +194,12 @@
 
         <div class="col-lg-4 col-md-6">
             <div class="product-item">
-                <img 
-                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
-                    alt="PRoduct Image"  class="product-image">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
+                    alt="PRoduct Image" class="product-image">
                 <h3 class="product-name">Product 1</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint minus assumenda? A similique eius fugiat.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus
+                    perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint
+                    minus assumenda? A similique eius fugiat.</p>
                 <p class="product-warranty">Bảo hành 60 tháng.</p>
                 <p class="product-price">Giá: <del>300$</del> 200$</p>
                 <div class="product-rating">
@@ -181,7 +210,7 @@
                     <i class="fa-solid fa-star-half-alt"></i>
                 </div>
                 <div class="product-action">
-                
+
                     <button class="btn btn-primary">Thêm vào giỏ hàng</button>
                     <span class="space-x"></span>
                     <button class="btn btn-success">Mua ngay</button>
@@ -191,11 +220,12 @@
 
         <div class="col-lg-4 col-md-6">
             <div class="product-item">
-                <img 
-                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
-                    alt="PRoduct Image"  class="product-image">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg"
+                    alt="PRoduct Image" class="product-image">
                 <h3 class="product-name">Product 1</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint minus assumenda? A similique eius fugiat.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus ducimus
+                    perspiciatis consectetur iusto. Ducimus quas cum voluptate? At eligendi quasi quod doloribus sint
+                    minus assumenda? A similique eius fugiat.</p>
                 <p class="product-warranty">Bảo hành 60 tháng.</p>
                 <p class="product-price">Giá: <del>300$</del> 200$</p>
                 <div class="product-rating">
@@ -206,7 +236,7 @@
                     <i class="fa-solid fa-star-half-alt"></i>
                 </div>
                 <div class="product-action">
-                
+
                     <button class="btn btn-primary">Thêm vào giỏ hàng</button>
                     <span class="space-x"></span>
                     <button class="btn btn-success">Mua ngay</button>
@@ -215,3 +245,5 @@
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>
