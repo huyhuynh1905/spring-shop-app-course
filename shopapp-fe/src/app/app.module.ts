@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { OrderComponent } from './order/order.component';
+import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
 
 
 
@@ -13,14 +14,16 @@ import { OrderComponent } from './order/order.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    OrderComponent
+    OrderComponent,
+    OrderConfirmComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
   bootstrap: [
-    OrderComponent
+    // OrderComponent,
+    OrderConfirmComponent
   ]
 })
 export class AppModule { }
